@@ -1,4 +1,6 @@
 @import "_mixins/font-face";
 
-@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
-@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("lato", "../fonts/LatoBold/LatoBold", 700);
+@include font-face("lato", "../fonts/LatoItalic/LatoItalic",italic);
+@include font-face("lato", "../fonts/LatoLight/LatoLight", 300);
+@include font-face("lato", "../fonts/LatoRegular/LatoRegular", 400);
