@@ -98,35 +98,146 @@ header {
 		}	
 	}
 }
-
+%btn {
+	height: 37px;
+	background-color: $accent;
+	text-transform: uppercase;
+	color: white;
+	border:none;
+}
 .brand {
 	background: url(/img/jumbotron.jpg) no-repeat center center;
 	background-size: cover;
-	height: 100%;
-	min-height: 500px;
+	.row {
+		height: 100%;
+		min-height: 500px;
+	}
 		h1 {
 			font-size: 55px;
 			font-weight: 300;
 			text-transform: capitalize;
 			color: white;
-			margin:auto;
+			margin-bottom: 40px;
 		}
 		p {
 			font-size: 18px;
 			line-height: 25px;
 			font-weight: 300;
 			color: #adaaa8;
-			margin:auto;
+			margin-bottom: 50px;		
 		}
 		.btn {
 			width: 122px;
-			height: 37px;
-			background-color: $accent;
-			text-transform: uppercase;
-			color: white;
-			border:none;
-			margin:auto;
+			@extend %btn;
 		}
+}
+.portfolio {
+	h2 {
+		font-size: 28px;
+		padding-top: 53px;
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 16px;
+		margin-bottom: 35px;
+
+	}
+	.btn {
+		@extend %btn;
+		margin-right: 7px;
+		margin-left: 7px;
+		margin-bottom: 45px;
+	}
+	.card {
+		margin-bottom: 35px;
+	}
+	.cards {
+		margin-bottom: 25px;
+	}
+}
+.about {
+	background-color: #16a086;
+	h2 {
+		font-size: 28px;
+		color:white;
+		padding-top: 57px;
+		margin-bottom: 15px;
+	}
+	p {
+		color:white;
+		margin-bottom: 44px;
+	}
+
+	.block {
+		width: 220px;
+		margin: auto;
+		background-color: white;
+		h3 {
+			font-size: 18px;
+			color:$text;
+			line-height: 18px;
+			margin-bottom: 0px;
+			padding-top: 20px;
+		}
+		span {
+			font-style: italic;
+			display: block;
+			margin-bottom: 15px;
+		}
+		p {
+			color:$text;
+			text-align: left;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-bottom: 20px;
+		}
+	}
+}
+.contact {
+	h2 {
+		font-size: 28px;
+		color:$text;
+		padding-top: 57px;
+		margin-bottom: 15px;
+	}
+	p {
+		color:$text;
+		margin-bottom: 44px;
+	}
+	.form-group-input {
+		width: 50%;
+		margin-bottom: 22px;
+		&:nth-child(1) {
+		padding-right: 10px;
+		}
+		&:nth-child(2) {
+			padding-left: 10px;
+		}
+	}
+	input {
+		border: 2px solid rgb(190, 195, 199);
+		width: 100%;
+		height: 50px;
+	}
+	textarea {
+		border: 2px solid rgb(190, 195, 199);
+	}
+	.btn {
+		margin-left: auto;
+		@extend %btn;
+		margin-top: 22px;
+		width: 115px;
+	}
+	.info {
+		h4 {
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+		.info-li {
+			font-weight: 600;
+			padding-bottom: 20px;
+		}
+	}
 }
 
 
